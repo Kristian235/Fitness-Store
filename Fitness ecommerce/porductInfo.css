@@ -1,0 +1,149 @@
+/*Product info*/
+.product-info{
+    margin: auto;
+    width: 80%;
+    height: 70vh;
+    /*border: 1px solid red;*/
+    padding-top: 5rem;
+    display: flex;
+    gap: 20px;
+}
+
+.product-info img{
+    height: 100%;
+    width: 50%;
+}
+
+.product-info h1{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 1rem;
+}
+
+/*Text Info*/
+.product-info p{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 3.2rem;
+}
+
+/*Price Info*/
+.price-info{
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    margin-top: 2em;
+}
+
+.price-info p{
+    color: #C12026;
+    font-family: sans-serif;
+    margin-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/*Availability info*/
+.availability-info p{
+    font-family: sans-serif;
+    color: white;
+}
+
+.colors-info{
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap;
+    margin-top: 2rem;
+}
+
+.shipping{
+    color: rgb(77, 77, 77); 
+    pointer-events: none;
+    margin-left: 0.5rem;
+}
+
+.colors{
+    border: 1px solid #5a5a5a;
+    width: 200px;
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: rgb(77, 77, 77);
+    margin-top: 5rem;
+    margin-left: 0.5rem;
+}
+
+.colors-info a{
+    pointer-events: none;
+}
+
+.availability{
+    color: white;
+    margin-top: 4rem;
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+.stock{
+    color: rgb(65, 227, 65);
+    margin-top: 4rem;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    display: inline-block; 
+}
+
+/*Add Buttons*/
+.add-buy{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.buy-product button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 4rem;
+    font-family: sans-serif;
+    color: white;
+    background-color: #C12026;
+    cursor: pointer;
+}
+
+.buy-product button a{
+    color: white;
+}
+
+
+
+@media(max-width: 500px){
+    .product-info{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-info img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .add-buy{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1280px){
+    .product-info{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-info img{
+        width: 100%;
+        height: 500px;
+    }
+
+    .add-buy{
+        justify-content: center;
+    }
+}

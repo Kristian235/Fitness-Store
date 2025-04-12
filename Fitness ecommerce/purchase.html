@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="purchase.css">
+    <title>Purchase Form</title>
+</head>
+<body>
+
+    <!--Logo-->
+    <nav>
+            <li class="logo"><a href="#">Gymbar</a></li>
+    </nav>
+
+    <!--Purchase Form-->
+    <div id="form" class="background-form">
+        <h3>First Name(First Uppercase)</h3>
+        <input id="first-name" class="input" type="text">
+        <h3>Last Name(First Uppercase)</h3>
+        <input id="last-name" class="input" type="text">
+        <h3>Phone Number(10 digits)</h3>
+        <input id="phone-number" class="input" type="text">
+        <h3>City(First Uppercase)</h3>
+        <input id="city" class="input" type="text">
+        <h3>Ofice</h3>
+        <select class="input" name="Firm" id="firms">
+            <option value="Ekont">Ekont</option>
+            <option value="Speedy">Speedy</option>
+        </select>
+        <h3>Purchase Method</h3>
+        <select class="input" name="Paying" id="pays">
+            <option value="Nalojen Platej">Cash</option>
+            <option value="Karta">Card</option>
+        </select>
+        <button id="purchase-button"><a href="final.html">Purchase</a></button>
+    </div>
+
+    <script src="validateForm.js"></script>
+</body>
+</html>

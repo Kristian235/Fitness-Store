@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="porductInfo.css">
+    <link rel="stylesheet" type="text/css" href="product.css">
+    <title>Home Page</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+    <!--Nav bar-->
+    <nav>
+        <ul class="sidebar">
+            <li class="close-bar" onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M4.07813,3c-0.3,0.586 -0.3543,0.6933 -0.6543,1.2793l5.76172,7.97852l-7.04883,8.74219h3.21094l5.35547,-6.64062l4.79688,6.64063h4.42188c0.3,-0.586 0.3543,-0.6933 0.6543,-1.2793l-6.70703,-9.28711l5.99414,-7.43359h-3.21094l-4.30078,5.33398l-3.85156,-5.33398z"></path></g></g>
+                </svg></a></li>
+            <li><a id="man" href="#">Man</a></li>
+            <li><a href="#">Woman</a></li>
+            <li><a href="#">Price</a></li>
+        </ul>
+        <ul>
+            <li class="logo"><a href="#">Gymbar</a></li>
+            <li class="hideOnMobile"><a id="man" href="#">Man</a></li>
+            <li class="hideOnMobile"><a href="#">Woman</a></li>
+            <li class="hideOnMobile"><a href="#">Price</a></li>
+            <li class="cart-image" onclick=showCard()><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="40" height="40" viewBox="0 0 256 256" xml:space="preserve">
+                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                    <path d="M 75.927 56.703 H 43.784 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 30.199 20.754 h -8.58 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 11.169 c 1.539 0 2.897 1.005 3.347 2.476 l 10.239 33.473 h 27.227 l 7.633 -18.164 H 54.06 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 H 86.5 c 1.172 0 2.267 0.587 2.915 1.563 c 0.648 0.977 0.766 2.213 0.312 3.293 L 79.153 54.559 C 78.607 55.858 77.336 56.703 75.927 56.703 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                    <circle cx="41.455" cy="67.935" r="4.815" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                    <circle cx="77.195" cy="67.935" r="4.815" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                    <path d="M 25.434 56.703 H 8.687 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 16.747 c 1.933 0 3.5 1.567 3.5 3.5 S 27.367 56.703 25.434 56.703 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                    <path d="M 20.247 42.18 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 16.747 c 1.933 0 3.5 1.567 3.5 3.5 S 22.18 42.18 20.247 42.18 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                </g>
+                </svg></li>
+
+            <li class="media-button" onclick=showSlideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
+                </svg></a></li>
+        </ul>
+        <ul id="card-bar">
+            <li class="close-button" onclick=hideCard()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M4.07813,3c-0.3,0.586 -0.3543,0.6933 -0.6543,1.2793l5.76172,7.97852l-7.04883,8.74219h3.21094l5.35547,-6.64062l4.79688,6.64063h4.42188c0.3,-0.586 0.3543,-0.6933 0.6543,-1.2793l-6.70703,-9.28711l5.99414,-7.43359h-3.21094l-4.30078,5.33398l-3.85156,-5.33398z"></path></g></g>
+                </svg></a></li>
+                <p id="sum"></p>
+        </ul>
+    </nav>
+
+    <!--Product info-->
+    <div class="product-info">
+        <img src="dumbell.png">
+        <div>
+        <h1>10kg dumbell which can be used for various exercises</h1>
+
+        <div class="price-info">
+        <p>$20.00</p>
+        </div>
+
+        <div class="availability-info">
+        <p>Shipping: <a class="shipping">Free Shipping</a></p>
+        <div class="colors-info">
+            <p>Color: <a class="colors">Black and White</a></p>
+        </div>
+        <h2 class="availability">Availability: <h2 class="stock">Instock</h2></h2>
+        </div>
+
+        <div class="add-buy">
+
+        <div class="buy-product">
+            <button><a href="purchase.html">Buy Now</a></button>
+        </div>
+        </div>
+
+        </div>
+    </div>
+    
+
+    <script>
+        function showSlideBar(){
+            const sideBar = document.querySelector(".sidebar");
+            sideBar.style.display = "flex";
+        }
+        function hideSideBar(){
+            const hideBar = document.querySelector(".sidebar");
+            hideBar.style.display = "none";
+        }
+        function showCard(){
+            const cart = document.getElementById("card-bar");
+            cart.style.display = "flex";
+        }
+        function hideCard(){
+            const cart = document.getElementById("card-bar");
+            cart.style.display = "none";
+        }
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
