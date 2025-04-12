@@ -20,9 +20,7 @@ function addToCard(e){
     cart.click();
 
     //Buy button
-    let aBtn = document.createElement("a");
-    aBtn.textContent = "Buy";
-    aBtn.href = "purchase.html";
+    button.textContent = "Buy";
     button.style.width = "120px";
     button.style.height = "50px";
     button.style.padding = "1rem";
@@ -30,7 +28,6 @@ function addToCard(e){
     button.style.backgroundColor = "#C12026";
     button.style.color = "white";
     button.style.cursor = "pointer";
-    button.appendChild(aBtn);
 
     let productsDiv = document.createElement("div");
     let imgDiv = document.createElement("div");
